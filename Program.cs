@@ -1,34 +1,50 @@
 using System;
-namespace Basic_Example
+
+namespace exp8
 {
-    class Program
+    public class tyre
     {
-        static void Main(string[] args)
+        public tyre() {
+            Console.WriteLine("Tyre - Vehicle");
+        }
+        public virtual void display()
         {
-  
+            Console.Write("Tyre is attached to ");
         }
     }
-    //Creating Base Class
-    class Tyre
+
+    public class car : tyre
     {
-        protected void TyreType()
+        public car() {
+            Console.WriteLine("Car Constructor");
+        }
+        public override void display()
         {
-  
+            base.display();
+            Console.WriteLine("Car");
         }
     }
-    //Creating Child Class
-    class Scooter : Tyre
+
+    public class scooter : tyre
     {
-        public void ScooterType()
+        public scooter() {
+            Console.WriteLine("Scooter Constructor");
+        }
+        public override void display()
         {
-          
+            base.display();
+            Console.WriteLine("Scooter");
+        }
     }
-    //Creating Child Class
-    class Car : Tyre
+    public class main
     {
-        public void CarType()
+        public static void Main(string[] args)
         {
-            
+            car newcar = new car();
+            newcar.display();
+            Console.WriteLine();
+            scooter newscooter = new scooter();
+            newscooter.display();
         }
     }
 }
