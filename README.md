@@ -1,4 +1,4 @@
-# 19AI308-Object-Oriented-Programming-using-CSharp--Ex7---Hierarchical-Inheritance
+# Ex7---Hierarchical-Inheritance
 ## AIM:
 To write a C# program to implement heirarchical inheritance for the following problem statement:  All the vehicles need Tyres on their wheels. 
 So, the manufacturer designs their vehicle as they want and import Tyre from its base class and fit it into Wheels. 
